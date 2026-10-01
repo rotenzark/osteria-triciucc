@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <title>Osteria TriCiucc — cucina romana e giardino segreto, Via Asiago 68 Milano</title>
 <meta name="description" content="Osteria TriCiucc, Via Asiago 68 a Milano: cucina romana — cacio e pepe, gricia, carbonara, amatriciana — e un giardino segreto all'interno. Si prenota allo 351 900 9608.">
 <link rel="canonical" href="https://rotenzark.github.io/osteria-triciucc/">
@@ -15,13 +16,58 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,400;0,500;0,600;1,400&family=Karma:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script>document.documentElement.className=document.documentElement.className.replace('no-js','js');</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"Osteria TriCiucc","servesCuisine":"Cucina romana","address":{"@type":"PostalAddress","streetAddress":"Via Asiago 68","addressLocality":"Milano","postalCode":"20128","addressCountry":"IT"},"telephone":"+393519009608","url":"https://rotenzark.github.io/osteria-triciucc/","priceRange":"20-30 €","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","reviewCount":"498"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"12:00","closes":"15:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"19:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"19:00","closes":"00:00"}]}
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Osteria TriCiucc",
+  "servesCuisine": "Cucina romana",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Asiago 68",
+    "addressLocality": "Milano",
+    "postalCode": "20128",
+    "addressCountry": "IT"
+  },
+  "telephone": "+393519009608",
+  "url": "https://rotenzark.github.io/osteria-triciucc/",
+  "priceRange": "20-30 €",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "12:00",
+      "closes": "15:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "19:00",
+      "closes": "00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "19:00",
+      "closes": "00:00"
+    }
+  ]
+}
 </script>
 </head>
 <body>
@@ -213,7 +259,7 @@
       <p class="dove__extra" data-i18n="dove.extra">Consumazione sul posto e asporto. 20–30 € a persona.</p>
     </div>
     <div class="dove__mappa reveal">
-      <iframe title="Mappa: Osteria TriCiucc, Via Asiago 68, Milano" data-i18n-title="dove.mappa" src="https://www.google.com/maps?q=Osteria+TriCiucc+Via+Asiago+68+Milano&output=embed" width="600" height="450" style="border:0" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 450px"><template><iframe title="Mappa: Osteria TriCiucc, Via Asiago 68, Milano" data-i18n-title="dove.mappa" src="https://www.google.com/maps?q=Osteria+TriCiucc+Via+Asiago+68+Milano&output=embed" width="600" height="450" style="border:0" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/search/?api=1&amp;query=Osteria%20TriCiucc%20Via%20Asiago%2068%20Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </section>
 </main>
@@ -221,7 +267,7 @@
 <footer class="piede">
   <p class="piede__n">Osteria TriCiucc</p>
   <p class="piede__d" data-i18n="piede.d">Via Asiago 68, 20128 Milano · <a href="tel:+393519009608">351 900 9608</a></p>
-  <p class="piede__b" data-i18n="piede.b">Sito dimostrativo realizzato da <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a> · le foto e i testi provengono da fonti pubbliche dell'attività.</p>
+  <p class="piede__b" data-i18n="piede.b">Sito dimostrativo realizzato da <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · le foto e i testi provengono da fonti pubbliche dell'attività.</p>
 </footer>
 
 <div class="barra">
@@ -238,5 +284,6 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="js/main.js?v=1"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
